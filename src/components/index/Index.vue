@@ -5,7 +5,7 @@
 				<Slide v-for="(item,index) in list" :key="index">
 					<img :src="item.pic_path" />
 				</Slide>
-				
+
 			</Swiper>
 			<div class="prev" @click="prev">
 				<img src="../../assets/img/left.png"/>
@@ -22,16 +22,16 @@
 					<img :src="item.pic_path"/>
 					<p>{{item.name}}</p>
 				</div>
-				
+
 			</div>
 			<div class="service-detail">
-				
+
 				<h2>{{service[nowService].name}}</h2>
 				<p v-html="service[nowService].content">{{service[nowService].content}}</p>
 
 			</div>
 		</div>
-		
+
 		<div class="service hangye"  id="hangye">
 			<h1>行业</h1>
 			<p class="p1">我们与多个行业内知名企业合作，熟悉洞察行业现状及发展是我们一直在做的事</p>
@@ -41,11 +41,11 @@
 					<h3>{{item.name}}</h3>
 					<p>{{item.content}}</p>
 				</div>
-				
+
 			</div>
 		</div>
-		
-		
+
+
 		<div class="service about"  id="about">
 			<h1>关于我们</h1>
 			<p class="p1">博亚君杰注重创新和可持续发展，不断探索前沿技术与商业应用的无限可能</p>
@@ -53,7 +53,7 @@
 				<div  v-for="(item,index) in about" :key="index" :class="['single',index == nowAbout ? 'active' : '']" @click="changeAbout(index)">
 					{{item.name}}
 				</div>
-				
+
 			</div>
 			<div class="about-content wrap">
 				<div class="img">
@@ -64,7 +64,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="service hangye"  id="zhaopin">
 			<h1>加入我们</h1>
 			<p class="p1">人才即未来，博亚君杰的发展需要广纳贤才，凝聚人才</p>
@@ -74,13 +74,13 @@
 					<h3>{{item.name}}</h3>
 					<p>{{item.content}}</p>
 				</div>
-				
+
 			</div>
-			
+
 			<div class="zhaopin-more wrap">
 				请访问博亚君杰的招聘合作网站，了解我们最新的职位需求
 				<div class="imgs">
-					
+
 					<img src="../../../static/img/zhilian.png"/>
 					<img src="../../../static/img/qiancheng.png"/>
 					<img src="../../../static/img/boos.png" />
@@ -88,15 +88,14 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class="service about"  id="lianxi">
 			<h1>联系我们</h1>
 			<div class="lianxi wrap">
 				<div class='left'>
-					<p>公司地址：中国北京市海淀区上地信息路  </p>
-					<p>服务热线：400-8000-88888888</p>
-					<p>邮箱：15454545456466@45.com</p>
-					<p>传真：022-45545545454</p>
+					<p>公司地址：北京市海淀区上地信息产业基地三街1号楼  </p>
+					<p>服务热线：010-56207170</p>
+					<p>邮箱：service@boya-isoft.com</p>
 				</div>
 				<div class="right">
 					<div class="top">
@@ -108,11 +107,11 @@
 				</div>
 			</div>
 		</div>
-		
+
 		<div class='footer'>
-			<p>版权所有：北京博亚君杰科技有限公司 Copyright © 2019 All Rights Reserved</p>
-			<p>公司地址：中国北京市海淀区上地信息路</p>
-			<p>联系电话：010-xxxxxx        传真：010- xxxxxx                京ICP备 xxxxx 号 </p>
+			<p>版权所有：北京博亚君杰科技有限公司 Copyright © 2019 All Rights Reserved 京ICP备19016084号-1</p>
+			<p>公司地址：北京市海淀区上地信息产业基地三街1号楼</p>
+			<p>联系电话：010-56207170 &nbsp;  邮箱：service@boya-isoft.com</p>
 		</div>
 	</div>
 </template>
@@ -225,7 +224,7 @@
 				about:[
 					{
 						name:'公司介绍',
-						content:'北京博亚君杰科技有限公司是一家专业的IT咨询、服务及行业解决方案提供商，公司凭借多年的行业积累、深厚的行业专长和成熟的行业实践、国际化的精英团队和完善的人才管理、完备的交付体系与服务网络、以及无处不在的创新精神与实践，助力客户尽享科技革新所带来的卓越运营，致力于为政府与大型企业、金融与银行、保险证券、电信、高科技、公共服务、能源、医疗健康、旅游、互联网等多个行业提供咨询服务、解决方案及系统集成服务、产品研发、IT外包及业务流程外包等高品质服务，为各领域客户持续创造关键价值。<br><br>作为国内领先的信息技术与行业软件服务供应商，博亚君杰坚持以客户为中心，全力以赴为客户交付提供尽善尽美的解决方案，同时紧密把握行业发展脉搏，充分利用良好的行业实践，为客户提供创新、适用、完整的信息化解决方案以及端到端（End to End）的信息技术服务。<br><br>博亚君杰注重创新和可持续发展，不断探索前沿技术与商业应用的无限可能。<br><br>未来，博亚君杰秉承“融合创新，成就卓越，超越期待，尽善尽美”的服务理念，一如既往的为客户提供优质、专业、高效的服务，力争成为中国综合实力最强的信息技术服务提供商，并将持续履行我们的社会责任，为优秀的人才提供一个开放、平等、机会丰富的工作平台，帮助他们实现自身的价值。',
+						content:'北京博亚君杰科技有限公司是一家专业的IT咨询、服务及行业解决方案提供商，公司凭借多年的行业积累、深厚的行业专长和成熟的行业实践、国际化的精英团队和完善的人才管理、完备的交付体系与服务网络、以及无处不在的创新精神与实践，助力客户尽享科技革新所带来的卓越运营，致力于为互联网、高科技、电信、政府企业、能源等多个行业提供数字化解决方案与服务，包括数字化咨询、数字化解决方案设计与实施、IT基础设施建设与运维、软件开发与测试服务和数字化运营服务、IT外包及业务流程外包等高品质服务，为各领域客户持续创造关键价值。<br><br>作为国内领先的信息技术与行业软件服务供应商，博亚君杰坚持以客户为中心，全力以赴为客户交付提供尽善尽美的解决方案，同时紧密把握行业发展脉搏，充分利用良好的行业实践，为客户提供创新、适用、完整的信息化解决方案以及端到端（End to End）的信息技术服务。<br><br>博亚君杰注重创新和可持续发展，不断探索前沿技术与商业应用的无限可能。<br><br>未来，博亚君杰秉承“融合创新，成就卓越，超越期待，尽善尽美”的服务理念，一如既往的为客户提供优质、专业、高效的服务，力争成为中国综合实力最强的信息技术服务提供商，并将持续履行我们的社会责任，为优秀的人才提供一个开放、平等、机会丰富的工作平台，帮助他们实现自身的价值。',
 						pic_path:'../../../static/img/gongsi.jpg'
 					},
 					{
@@ -281,7 +280,7 @@
 						name:'实施工程师',
 						content:'岗位职责：负责基金、保险、证券、信托等行业投资系统、估值系统、登记过户系统等应用软件的驻场运维服务工作。'
 					}
-					
+
 				],
 			}
 		},
